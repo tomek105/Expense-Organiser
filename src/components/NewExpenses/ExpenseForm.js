@@ -22,7 +22,7 @@ function ExpenseForm(props) {
 
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount, //"+" to make sure about Number conversion!!!!!!
       date: new Date(enteredDate),
     };
 
