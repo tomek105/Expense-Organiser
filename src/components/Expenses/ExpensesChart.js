@@ -14,7 +14,7 @@ const ExpensesChart = (props) => {
     { label: "Oct", value: 0 },
     { label: "Nov", value: 0 },
     { label: "Dec", value: 0 },
-  ];
+  ]; //tablica obiektów(miesięcy) i ich wartości na której potem mapujemy i tworzymy słupki wykresu
 
   for (const expense of props.expenses) {
       const expenseMonth = expense.date.getMonth(); //starting at 0 to 12, jan to dec
